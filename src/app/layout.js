@@ -1,6 +1,9 @@
 import { Encode_Sans } from 'next/font/google'
 import './globals.css'
 
+// Components
+import Navbar from './Components/Navbar'
+
 const encodesans = Encode_Sans({ subsets: ['latin'] })
 
 export const metadata = {
@@ -12,6 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={encodesans.className}>
+        <Navbar />
         {children}
       </body>
     </html>
