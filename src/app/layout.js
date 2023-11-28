@@ -3,6 +3,7 @@ import './globals.css'
 
 // Components
 import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
 
 const encodesans = Encode_Sans({ subsets: ['latin'] })
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body className={encodesans.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )
