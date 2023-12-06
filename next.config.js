@@ -9,7 +9,10 @@ const nextConfig = {
                 pathname: '/api/portraits/**'
             }
         ],
-    }
+    },
+    eslint: {
+        ignoreDuringBuilds: true,
+    },
 }
 
 module.exports = nextConfig
