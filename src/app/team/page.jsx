@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 async function getData() {
     const res = await fetch('https://randomuser.me/api/?results=15&seed=logic')
 
@@ -18,28 +20,28 @@ export default async function Team() {
                     <div className="grid grid-cols-4 gap-4" >
                              <div className="text-black">
                                 <div>
-                                    <img src={`${data.results[0].picture.large}`} alt="" className="w-full" />
+                                    <Image src={`${data.results[0].picture.large}`} alt="" width={100} height={100} className="w-full" />
                                 </div>
                                 <h1 className="text-xl font-bold">{data.results[0].name.title}. {data.results[0].name.first} {data.results[0].name.last}</h1>
                                 <h2>Co-Founder & CEO</h2>
                             </div>
                             <div className="text-black">
                                 <div>
-                                    <img src={`${data.results[3].picture.large}`} alt="" className="w-full" />
+                                    <Image src={`${data.results[3].picture.large}`} width={100} height={100} alt="" className="w-full" />
                                 </div>
                                 <h1 className="text-xl font-bold">{data.results[3].name.title}. {data.results[3].name.first} {data.results[3].name.last}</h1>
                                 <h2>Co-Founder & CTO</h2>
                             </div>
                             <div className="text-black">
                                 <div>
-                                    <img src={`${data.results[1].picture.large}`} alt="" className="w-full" />
+                                    <Image src={`${data.results[1].picture.large}`} alt="" width={100} height={100} className="w-full" />
                                 </div>
                                 <h1 className="text-xl font-bold">{data.results[1].name.title}. {data.results[1].name.first} {data.results[1].name.last}</h1>
                                 <h2>Chief Financial Officer</h2>
                             </div>
                             <div className="text-black">
                                 <div>
-                                    <img src={`${data.results[2].picture.large}`} alt="" className="w-full" />
+                                    <Image src={`${data.results[2].picture.large}`} alt="" width={100} height={100} className="w-full" />
                                 </div>
                                 <h1 className="text-xl font-bold">{data.results[2].name.title}. {data.results[2].name.first} {data.results[2].name.last}</h1>
                                 <h2>Chief Human Resources Officer</h2>
@@ -52,7 +54,7 @@ export default async function Team() {
                                 return(
                                     <div className="text-black">
                                         <div>
-                                            <img src={`${items.picture.large}`} alt="" className="w-full" />
+                                            <Image src={`${items.picture.large}`} alt="" width={100} height={100} className="w-full" />
                                         </div>
                                         <h1 className="text-xl font-bold">{items.name.title}. {items.name.first} {items.name.last}</h1>
                                         <h2>Fullstack Developer</h2>
@@ -65,7 +67,7 @@ export default async function Team() {
                                 return(
                                     <div className="text-black">
                                         <div>
-                                            <img src={`${items.picture.large}`} alt="" className="w-full" />
+                                            <Image src={`${items.picture.large}`} alt="" width={100} height={100} className="w-full" />
                                         </div>
                                         <h1 className="text-xl font-bold">{items.name.title}. {items.name.first} {items.name.last}</h1>
                                         <h2>UI/UX Designer</h2>
@@ -78,7 +80,7 @@ export default async function Team() {
                                 return(
                                     <div className="text-black">
                                         <div>
-                                            <img src={`${items.picture.large}`} alt="" className="w-full" />
+                                            <Image src={`${items.picture.large}`} alt="" width={100} height={100} className="w-full" />
                                         </div>
                                         <h1 className="text-xl font-bold">{items.name.title}. {items.name.first} {items.name.last}</h1>
                                         <h2>Frontend Developer</h2>
@@ -91,7 +93,7 @@ export default async function Team() {
                                 return(
                                     <div className="text-black">
                                         <div>
-                                            <img src={`${items.picture.large}`} alt="" className="w-full" />
+                                            <Image src={`${items.picture.large}`} alt="" width={100} height={100} className="w-full" />
                                         </div>
                                         <h1 className="text-xl font-bold">{items.name.title}. {items.name.first} {items.name.last}</h1>
                                         <h2>Backend Developer</h2>

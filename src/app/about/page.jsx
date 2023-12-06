@@ -1,4 +1,5 @@
 import Timeline from "../Components/Timeline"
+import Image from "next/image"
 
 async function getData() {
     const res = await fetch('https://randomuser.me/api/?results=15&seed=logic')
@@ -51,7 +52,7 @@ export default async function About() {
                                 <div className="flex text-black">
                                     <div className="flex w-1/3 flex-col justify-center items-center">
                                         <div>
-                                            <img src={`${data.results[0].picture.large}`} alt="" className="" />
+                                            <Image src={`${data.results[0].picture.large}`} alt="" width={100} height={100} className="" />
                                         </div>
                                         <h1 className="text-xl font-bold">{data.results[0].name.title}. {data.results[0].name.first} {data.results[0].name.last}</h1>
                                         <h2>Co-Founder & CEO</h2>
@@ -66,7 +67,7 @@ export default async function About() {
                                 <div className="flex text-black">
                                     <div className="flex w-1/3 flex-col justify-center items-center">
                                         <div>
-                                            <img src={`${data.results[3].picture.large}`} alt="" className="" />
+                                            <Image src={`${data.results[3].picture.large}`} alt="" width={100} height={100} className="" />
                                         </div>
                                         <h1 className="text-xl font-bold">{data.results[3].name.title}. {data.results[3].name.first} {data.results[0].name.last}</h1>
                                         <h2>Co-Founder & CTO</h2>
@@ -81,7 +82,7 @@ export default async function About() {
                                 <div className="flex text-black">
                                     <div className="flex w-1/3 flex-col justify-center items-center">
                                         <div>
-                                            <img src={`${data.results[1].picture.large}`} alt="" className="" />
+                                            <Image src={`${data.results[1].picture.large}`} alt="" width={100} height={100} className="" />
                                         </div>
                                         <h1 className="text-xl font-bold">{data.results[1].name.title}. {data.results[1].name.first} {data.results[1].name.last}</h1>
                                         <h2>Chief Financial Officer</h2>
@@ -96,7 +97,7 @@ export default async function About() {
                                 <div className="flex text-black">
                                     <div className="flex w-1/3 flex-col justify-center items-center">
                                         <div>
-                                            <img src={`${data.results[2].picture.large}`} alt="" className="" />
+                                            <Image src={`${data.results[2].picture.large}`} alt="" width={100} height={100} className="" />
                                         </div>
                                         <h1 className="text-xl font-bold">{data.results[2].name.title}. {data.results[2].name.first} {data.results[2].name.last}</h1>
                                         <h2>Chief Human Resources Officer</h2>
@@ -116,7 +117,7 @@ export default async function About() {
                                             <div className="flex text-black">
                                                 <div className="flex w-1/3 flex-col justify-center items-center">
                                                     <div>
-                                                        <img src={`${items.picture.large}`} alt="" className="" />
+                                                        <Image src={`${items.picture.large}`} alt="" width={100} height={100} className="w-full" />
                                                     </div>
                                                     <h1 className="text-xl font-bold">{items.name.title}. {items.name.first} {items.name.last}</h1>
                                                     <h2>PM Fullstack</h2>
@@ -136,7 +137,7 @@ export default async function About() {
                                             <div className="flex text-black">
                                             <div className="flex w-1/3 flex-col justify-center items-center">
                                                 <div>
-                                                    <img src={`${items.picture.large}`} alt="" className="" />
+                                                    <Image src={`${items.picture.large}`} alt="" width={100} height={100} className="w-full" />
                                                 </div>
                                                 <h1 className="text-xl font-bold">{items.name.title}. {items.name.first} {items.name.last}</h1>
                                                 <h2>PM UI/UX</h2>
@@ -156,7 +157,7 @@ export default async function About() {
                                             <div className="flex text-black">
                                             <div className="flex w-1/3 flex-col justify-center items-center">
                                                 <div>
-                                                    <img src={`${items.picture.large}`} alt="" className="" />
+                                                    <Image src={`${items.picture.large}`} alt="" width={100} height={100} className="w-full" />
                                                 </div>
                                                 <h1 className="text-xl font-bold">{items.name.title}. {items.name.first} {items.name.last}</h1>
                                                 <h2>PM Frontend</h2>
@@ -176,7 +177,7 @@ export default async function About() {
                                             <div className="flex text-black">
                                             <div className="flex w-1/3 flex-col justify-center items-center">
                                                 <div>
-                                                    <img src={`${items.picture.large}`} alt="" className="" />
+                                                    <Image src={`${items.picture.large}`} alt="" width={100} height={100} className="w-full" />
                                                 </div>
                                                 <h1 className="text-xl font-bold">{items.name.title}. {items.name.first} {items.name.last}</h1>
                                                 <h2>PM Backend</h2>
