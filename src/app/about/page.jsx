@@ -114,7 +114,7 @@ export default async function About() {
                                 {
                                     data.results.slice(4,5).map((items, index) => {
                                         return(
-                                            <div className="flex text-black">
+                                            <div key={index} className="flex text-black">
                                                 <div className="flex w-1/3 flex-col justify-center items-center">
                                                     <div>
                                                         <Image src={`${items.picture.large}`} alt="" width={100} height={100} className="w-full" />
@@ -134,7 +134,7 @@ export default async function About() {
                                 {
                                     data.results.slice(7,8).map((items, index) => {
                                         return(
-                                            <div className="flex text-black">
+                                            <div key={index} className="flex text-black">
                                             <div className="flex w-1/3 flex-col justify-center items-center">
                                                 <div>
                                                     <Image src={`${items.picture.large}`} alt="" width={100} height={100} className="w-full" />
@@ -154,7 +154,7 @@ export default async function About() {
                                                         {
                                     data.results.slice(10,11).map((items, index) => {
                                         return(
-                                            <div className="flex text-black">
+                                            <div key={index} className="flex text-black">
                                             <div className="flex w-1/3 flex-col justify-center items-center">
                                                 <div>
                                                     <Image src={`${items.picture.large}`} alt="" width={100} height={100} className="w-full" />
@@ -174,7 +174,7 @@ export default async function About() {
                                 {
                                     data.results.slice(13,14).map((items, index) => {
                                         return(
-                                            <div className="flex text-black">
+                                            <div key={index} className="flex text-black">
                                             <div className="flex w-1/3 flex-col justify-center items-center">
                                                 <div>
                                                     <Image src={`${items.picture.large}`} alt="" width={100} height={100} className="w-full" />

@@ -52,7 +52,7 @@ export default async function Team() {
                         {
                             data.results.slice(4,6).map((items, index) => {
                                 return(
-                                    <div className="text-black">
+                                    <div key={index} className="text-black">
                                         <div>
                                             <Image src={`${items.picture.large}`} alt="" width={100} height={100} className="w-full" />
                                         </div>
@@ -65,7 +65,7 @@ export default async function Team() {
                         {
                             data.results.slice(7,9).map((items, index) => {
                                 return(
-                                    <div className="text-black">
+                                    <div key={index} className="text-black">
                                         <div>
                                             <Image src={`${items.picture.large}`} alt="" width={100} height={100} className="w-full" />
                                         </div>
@@ -78,7 +78,7 @@ export default async function Team() {
                                                 {
                             data.results.slice(10,13).map((items, index) => {
                                 return(
-                                    <div className="text-black">
+                                    <div key={index} className="text-black">
                                         <div>
                                             <Image src={`${items.picture.large}`} alt="" width={100} height={100} className="w-full" />
                                         </div>
@@ -91,7 +91,7 @@ export default async function Team() {
                         {
                             data.results.slice(13,15).map((items, index) => {
                                 return(
-                                    <div className="text-black">
+                                    <div key={index} className="text-black">
                                         <div>
                                             <Image src={`${items.picture.large}`} alt="" width={100} height={100} className="w-full" />
                                         </div>
