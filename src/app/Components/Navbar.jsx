@@ -2,6 +2,7 @@
 import Link from "next/link"
 import { RxCaretDown } from "react-icons/rx";
 import { useEffect, useState } from 'react';
+import Image from "next/image";
 
 export default function Navbar() {
     const [scrolling, setScrolling] = useState(false);
@@ -26,7 +27,7 @@ export default function Navbar() {
             <nav className={`z-50 sticky top-0 flex justify-between font-bold ${
                     scrolling ? 'bg-white text-black' : 'bg-black text-white'
                 }`}>
-                <Link href={'/'}><img src="/Logo.svg" alt="QL Logo" width='64' height='64'  className="ml-4 my-4" /></Link>
+                <Link href={'/'}><Image src="/Logo.svg" alt="QL Logo" width='64' height='64'  className="ml-4 my-4" /></Link>
                 <div className="flex gap-8 mr-16 mt-8">
                     <Link href={'/'}> Home </Link>
                     <div className="dropdown dropdown-end">
