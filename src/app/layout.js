@@ -15,6 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preload" href="/QLimage1.png" as="image" />
+      </head>
       <body className={encodesans.className}>
         <Navbar />
         {children}
